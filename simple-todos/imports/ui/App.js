@@ -7,12 +7,6 @@ import Task from "./Task.js";
 
 // App component - represents the whole app
 class App extends Component {
-	constructor() {
-		super();
-		this.state = {
-			tasks: Tasks.find({}).fetch()
-		};
-	}
 	componentDidMount() {
 		console.log(Tasks.find({}).fetch());
 	}
